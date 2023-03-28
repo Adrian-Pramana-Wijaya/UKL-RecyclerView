@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/body_container"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/Welcome"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Selamat Datang, "
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/emailText"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Welcome"
+                    android:layout_marginLeft="17dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/Welcome"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_action_notifications"
+                    android:drawableLeft="@drawable/ic_action_notifications"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/Iconi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/Icon"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_action_timeline"
+                    android:drawableLeft="@drawable/ic_action_timeline"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/Iconi"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_action_settings"
+                    android:drawableLeft="@android:drawable/ic_menu_recent_history"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            </RelativeLayout>
+
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/buttonmusic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Musik"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonpodcast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/buttonmusic"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Podcast"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonrecent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/buttonpodcast"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Event"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonevent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/buttonrecent"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Recent"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/buttonevent"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Likely"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_background"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:drawablePadding="10dp"
+                android:hint="Cari Lagu Kesukaanmu"
+                android:paddingStart="20dp"
+                android:textColor="@color/warna1"
+                android:textStyle="italic">
+
+            </EditText>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/namaduwa"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Musikmu, "
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/namasatu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_toRightOf="@id/namaduwa"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/langkah1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:src="@drawable/pl" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/langkah1"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/langkah2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/langkah1"
+                        android:src="@drawable/pla" />
+
+                    <TextView
+                        android:id="@+id/textt"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/langkah2"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/langkah1"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/langkah3"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/langkah2"
+                        android:src="@drawable/play" />
+
+                    <TextView
+                        android:id="@+id/texttt"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/langkah3"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/langkah2"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Radio populer"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/radio1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:src="@drawable/play" />
+
+                    <TextView
+                        android:id="@+id/textradio1"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radio1"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/radio2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/radio1"
+                        android:src="@drawable/p" />
+
+                    <TextView
+                        android:id="@+id/textradio2"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radio1"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/radio1"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/radio3"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/radio2"
+                        android:src="@drawable/pl" />
+
+                    <TextView
+                        android:id="@+id/textradio3"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radio2"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/radio2"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Tangga Lagu"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/music1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textmusic1"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/music1"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/music2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/music1"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textmusic2"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/music2"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/music1"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/music3"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/music2"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textmusic3"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/music2"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/music2"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Artis populer"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/artiso"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textartisone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/artiso"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Tulus"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/artisto"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_toRightOf="@id/artiso"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textartisto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/artisto"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/artiso"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Tulus"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/artistoo"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_toRightOf="@id/artisto"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textartistoo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/artistoo"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/artisto"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Tulus"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+
+
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Sedang tren sekarang"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/trenone"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/texttrenone"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/trenone"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/trentwo"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/trenone"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/texttrentwo"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/trentwo"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/trenone"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/trenthree"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/trentwo"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/texttrenthree"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/trenthree"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/trentwo"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Musik Indonesia Masa ke Masa"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/masaone"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textmasaone"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/masaone"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/masatwo"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/masaone"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textmasatwo"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/masatwo"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/masaone"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/masathree"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/masatwo"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textmasathree"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/masathree"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/masatwo"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Album populer"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/fokusone"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textfokusone"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fokusone"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/fokustwo"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/fokusone"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textfokustwo"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fokustwo"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/fokusone"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/fokusthree"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/fokustwo"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textfokusthree"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fokusthree"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/fokustwo"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Fokus Mode"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/popularone"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textpopularone"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/popularone"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/populartwo"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/popularone"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textpopulartwo"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/populartwo"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/popularone"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/popularthree"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/populartwo"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textpopularthree"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/popularthree"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/populartwo"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/makeyou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Dibuat untuk Anda"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+
+                <ImageButton
+                    android:id="@+id/popularoo"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/makeyou"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <TextView
+                    android:id="@+id/textpopularonooe"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/popularoo"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/namasatu"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Musisi kok punya podcast"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/kokone"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:src="@drawable/ic_launcher_background"
+                        app:cornerRadius="20dp" />
+
+                    <TextView
+                        android:id="@+id/textkokone"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/kokone"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/koktwo"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/kokone"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textkoktwo"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/koktwo"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/kokone"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                    <ImageButton
+                        android:id="@+id/kokthree"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/koktwo"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:id="@+id/textkokthree"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/kokthree"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/koktwo"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="@string/namasatu"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp" />
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Spill di Balik BOSAD Season 2!"
+                android:textColor="@color/white"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Perjalanan Onggok di BOSAD Season 2!"
+                android:textColor="@color/white"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Recycler View Mode"
+                android:textColor="@color/white"
+                android:textSize="25dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_music"
+                tools:listitem="@layout/item_cardview_music">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:elevation="2dp"
+        app:menu="@menu/menu_item"
+        android:background="@drawable/round_corner"
+        app:itemIconSize="30dp"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@drawable/item_selector"
+        android:id="@+id/bottom_navigation"
+        android:forceHasOverlappingRendering="true"/>
+</RelativeLayout>
